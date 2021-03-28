@@ -16,7 +16,7 @@ This counter has buttons to increase, decrease or reset the number value, and a 
 ![number counter in dark mode](https://res.cloudinary.com/ritikadas/image/upload/v1616894816/My_Images/dark-theme_amcmos.gif)
 
 ## Links to emoji sources
-- ![Minus](https://emojipedia.org/minus/)
-- ![Plus](https://emojipedia.org/plus/)
-- ![Medium Black Circle](https://emojipedia.org/black-circle/)
-- ![White Circle](https://emojipedia.org/white-circle/)
+- [Minus](https://emojipedia.org/minus/)
+- [Plus](https://emojipedia.org/plus/)
+- [Medium Black Circle](https://emojipedia.org/black-circle/)
+- [White Circle](https://emojipedia.org/white-circle/)
