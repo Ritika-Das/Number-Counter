@@ -1,5 +1,5 @@
 # Number-Counter
-This counter has buttons to increase, decrease or reset the number value, and a dark/light mode toggle button - live ![here](https://ritika-das.github.io/Number-Counter/).
+This counter has buttons to increase, decrease or reset the number value, and a dark/light mode toggle button - live [here](https://ritika-das.github.io/Number-Counter/).
 <br>It has been made using simple DOM manipulation in JavaScript, and minimal CSS.
 
 ## Stuff to Try
