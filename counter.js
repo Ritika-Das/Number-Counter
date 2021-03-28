@@ -1,8 +1,11 @@
-var i = 0;
+let i = 0;
 
-let increase = () => document.getElementById("inc").value = i++;
-let decrease = () => document.getElementById("inc").value = i--;
-let reset = () => document.getElementById("inc").value = 0;
+let increase = () => document.getElementById("inc").value = ++i;
+let decrease = () => document.getElementById("inc").value = --i;
+let reset = () => {
+    i = 0;
+    document.getElementById("inc").value = i;
+}
 
 let toggle = () =>
 {
