@@ -1,0 +1,47 @@
+body {
+    padding-top: 2%;
+    background: #f3f3f3;
+    margin: auto;
+    width: 50%;
+}
+h1 {
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 13%;
+    font-family: 'Chango', cursive;
+    transform: scale(1.2);
+}
+h1:hover {
+    transform: scale(1.4);
+}
+#inc {
+    text-align: center;
+    font-size: xx-large;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'minus count plus'
+    '. zero .';
+    grid-gap: 20px;
+}
+.minus:active {
+    background-color: #e04141;
+}
+.plus:active {
+    background-color: lawngreen;
+}
+button {
+    font-size: xx-large;
+    border-radius: 20px;
+}
+.zero:active {
+    background-color: lightseagreen;
+}
+.mode {
+    padding-bottom: 2%;
+}
+span {
+    color: #f3f3f3;
+    font-size: x-large;
+}
