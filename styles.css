@@ -17,6 +17,7 @@ h1:hover {
 #inc {
     text-align: center;
     font-size: xx-large;
+    width: 95%;
 }
 .grid-container {
     display: grid;
@@ -41,7 +42,25 @@ button {
 .mode {
     padding-bottom: 2%;
 }
-span {
-    color: #f3f3f3;
+.sp {
+    color: #000000;
     font-size: x-large;
+    font-family: 'Chango', cursive;
+}
+@media (max-width: 800px) {
+  .grid-container {
+      display: flexbox;
+      justify-content: center;
+      padding: 50px;
+  }
+  button {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  h1 {
+      padding-top: 55%;
+  }
+  #inc {
+      width: 85%;
+  }
 }
