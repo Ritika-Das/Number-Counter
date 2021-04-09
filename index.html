@@ -5,29 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="counter.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet"> 
     <title>🔴&nbsp;&nbsp;Number Counter&nbsp;&nbsp;🟢</title>
 </head>
 <body>
-    <!-- The button for dark and lght mode -->
-    <div class="mode-btn-cont">
-        <button class="mode-btn">⚫⚪</button>
-        <p class="explainer-text">Click to enable Dark Mode</p>
-    </div>
-    <!-- Title -->
-    <h1 class="title slide-in-blurred-top">Number Counter</h1>
-    <!-- Minus button, counter, Plus button -->
-    <div class="counter-cont slide-in-blurred-bottom">
-        <button class="counter-btn minus">➖</button>
-        <input id="inc" value="0">
-        <button class="counter-btn plus">➕</button><br>
-    </div>
-    <!-- The reset button --> 
-    <div class="counter-cont slide-in-blurred-bottom">
-        <button class="reset">Reset</button>
-    </div>
+    <button class="mode" onclick="toggle()" ondblclick="change()">⚫⚪</button>
+    <span id="sp">Click to enable Dark Mode</span>
     
+    <h1 id="H1">Number Counter</h1>
+
+    <div class="grid-container">
+        <button class="minus" onclick="decrease()">➖</button>
+        <input id="inc" value="0">
+        <button class="plus" onclick="increase()">➕</button><br>
+        <button class="zero" onclick="reset()">Reset</button>
+    </div>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="counter.js"></script>
 </body>
 </html>

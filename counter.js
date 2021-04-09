@@ -1,51 +1,24 @@
-/* DOM */
-const explainerText = document.querySelector(".explainer-text"); // This is your explainer text.
-const modeBtn = document.querySelector(".mode-btn"); // This is your mode button.
-const minus = document.querySelector(".minus"); // This is your minus button.
-const inc = document.querySelector("#inc"); // This is the number text.
-const plus = document.querySelector(".plus"); // This is your plus button.
-const reset = document.querySelector(".reset"); // This is your reset button.
+let i = 0;
 
-let i = 0; // This is your variable for the number.
-
-/* Event Handler */
-// When this is clicked, toggle light/dark mode
-modeBtn.addEventListener("click", toggleChange);
-// When this is clicked, increase the number text by 1.
-minus.addEventListener("click", decrease);
-// When this is clicked, decrease the number text by 1.
-plus.addEventListener("click", increase);
-// When this is clicked, reset the number text back to 0.
-reset.addEventListener("click", resetNumber);
-
-/* Functions */
-// Increase the number text by 1.
-function increase() {
-    i++
-    updateNumberText();
-};
-
-// Decrease the number text by 1.
-function decrease() {
-    i--;
-    updateNumberText();
-};
-
-// Reset the number text back to 0.
-function resetNumber() {
+let increase = () => document.getElementById("inc").value = ++i;
+let decrease = () => document.getElementById("inc").value = --i;
+let reset = () => {
     i = 0;
-    updateNumberText();
+    document.getElementById("inc").value = i;
 }
 
-// This will update the number text.
-function updateNumberText() {
-    inc.value = i;
+let toggle = () =>
+{
+    document.body.style.background = "#000000";
+    document.getElementById("H1").style.color = "springgreen";
+    document.getElementById("sp").innerHTML = "Double-click for light mode";
+    document.getElementById("sp").style.color = "#f3f3f3";
 }
 
-// This will toggle dark mode and light mode.
-function toggleChange() {
-    document.body.classList.toggle("dark-mode");
-    // This will change the text depending on the mode.
-    if (document.body.classList.contains("dark-mode")) explainerText.textContent = "Click to enable light mode."; 
-    if (!document.body.classList.contains("dark-mode")) explainerText.textContent = "Click to enable Dark Mode.";
+let change = () =>
+{
+    document.body.style.background = "#f3f3f3";
+    document.getElementById("H1").style.color = "black";
+    document.getElementById("sp").innerHTML = "Click to enable Dark Mode";
+    document.getElementById("sp").style.color = "#000000";
 }
